@@ -1,0 +1,529 @@
+@font-face {
+  font-family: 'Luke';
+  src: local('Luke Thin 100'), local('Luke-Thin-100'),
+      url('./fonts/Luke-Thin100.woff2') format('woff2'),
+      url('./fonts/Luke-Thin100.woff') format('woff'),
+      url('./fonts/Luke-Thin100.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+.disableSelection{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 85vh;
+  width: 140vh;
+  background: rgba(255, 255, 255, 0.993);
+  margin: 0 auto;
+  top: 7.8vh;
+  border-radius: 0.7vh;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+}
+
+.edit {
+  position: relative;
+  height: 85vh;
+  width: 140vh;
+  background: rgba(255, 255, 255, 0.966);
+  margin: 0 auto;
+  top: 7.8vh;
+  border-radius: 0.7vh;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+}
+
+#newstitle {
+  position: relative;
+  color: rgb(0, 0, 0);
+  margin-top: 2vh;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Times New Roman";
+  background-repeat: no-repeat;
+  word-spacing: 10px;
+}
+
+#hr1 {
+  border: 0;
+  height: 2px;
+  margin-top: 0.5vh;
+  background-color: rgb(139, 139, 139);
+}
+
+
+#hr2 {
+  border: 0;
+  height: 2px;
+  margin-top: 0.5vh;
+  background-color: rgb(139, 139, 139);
+}
+
+#time {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.firstpage{
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  color: black;
+  margin-left: 2vh;
+  word-wrap:break-word;
+}
+
+#fpheader {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0.7vh;
+  font-family: 'Inter';
+}
+
+#firstpageheader{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  margin-left: 30%;
+  top: 1vh;
+  width: 50vh;
+  font-family: 'Inter';
+}
+
+#tpheader {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0.7vh;
+  font-family: 'Inter';
+}
+
+#next1{
+  position: relative;
+  text-align: end;
+  font-size: 28px;
+  bottom: 22px;
+  right: 10px;
+}
+
+#next1:hover{
+  color: rgba(0, 0, 0, 0.459);
+}
+
+#next1edit {
+  position: absolute;
+  top: 1.5vh;
+  text-align: end;
+  color: rgb(19, 19, 19);
+  font-size: 30px;
+  bottom: 0px;
+}
+
+#next1edit:hover{
+  color: rgba(0, 0, 0, 0.459);
+}
+
+#back2edit {
+  position: absolute;
+  top: 1.5vh;
+  text-align: end;
+  color: rgb(19, 19, 19);
+  font-size: 30px;
+  bottom: 0px;
+}
+
+#back2edit:hover{
+  color: rgba(0, 0, 0, 0.459);
+}
+
+#next2edit {
+  position: absolute;
+  top: 1.5vh;
+  text-align: end;
+  color: rgb(19, 19, 19);
+  font-size: 30px;
+  bottom: 0px;
+}
+
+#next2edit:hover{
+  color: rgba(0, 0, 0, 0.459);
+}
+
+#back1back {
+  position: absolute;
+  top: 6vh;
+  text-align: end;
+  color: rgb(19, 19, 19);
+  font-size: 30px;
+  bottom: 0px;
+}
+
+#back1back:hover{
+  color: rgba(0, 0, 0, 0.459);
+}
+
+
+#next2{
+  position: relative;
+  text-align: end;
+  font-size: 28px;
+  bottom: 22px;
+  right: 10px;
+}
+
+#next2:hover{
+  color: rgba(0, 0, 0, 0.459);
+}
+
+#back2{
+  position: relative;
+  text-align: end;
+  font-size: 28px;
+  bottom: 75px;
+  right: 10px;
+}
+
+#back2:hover{
+  color: rgba(0, 0, 0, 0.459);
+}
+#back3{
+  position: relative;
+  text-align: end;
+  font-size: 28px;
+  bottom: 18px;
+  right: 10px;
+}
+
+#back3:hover{
+  color: rgba(0, 0, 0, 0.459);
+}
+
+#fpnews {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  text-align: justify;
+  width: 84vh;
+  height: 50vh;
+  overflow-y: scroll;
+  left: 38%;
+  font-size: 29px;
+  margin-top: 1.3vh;
+  font-family: 'Inter';
+}
+
+#tpnews {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  text-align: justify;
+  width: 84vh;
+  height: 50vh;
+  overflow-y: scroll;
+  left: 38%;
+  font-size: 29px;
+  margin-top: 1.3vh;
+  font-family: 'Inter';
+}
+
+#spheader {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0.7vh;
+  font-family: 'Inter';
+}
+
+#spnews {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  text-align: justify;
+  width: 84vh;
+  height: 50vh;
+  overflow-y: scroll;
+  left: 38%;
+  font-size: 29px;
+  margin-top: 1.3vh;
+  font-family: 'Inter';
+}
+
+.secondpage{
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  color: black;
+  margin-left: 2vh;
+  word-wrap:break-word;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.image{
+  position: relative;
+  height: 55vh;
+  width: 50vh;
+  background: rgba(255, 255, 255, 0.993);
+  border-radius: 1vh;
+}
+
+#img1{
+  position: relative;
+  width: 99.8%;
+  height: 99.5%;
+  border-radius: 1px;
+}
+
+.image2{
+  position: relative;
+  height: 55vh;
+  width: 50vh;
+  background: rgba(255, 255, 255, 0.993);
+  border-radius: 1vh;
+}
+
+#img2{
+  position: relative;
+  width: 99.8%;
+  height: 99.5%;
+  border-radius: 1px;
+}
+
+.image3{
+  position: relative;
+  height: 55vh;
+  width: 50vh;
+  background: rgba(255, 255, 255, 0.993);
+  border-radius: 1vh;
+}
+
+#img3{
+  position: relative;
+  width: 99.8%;
+  height: 99.5%;
+  border-radius: 1px;
+}
+
+.thirdpage{
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  color: black;
+  margin-left: 2vh;
+  word-wrap:break-word;
+}
+
+#firstpagephoto{
+  height: 54vh;
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  width: 44vh;
+  font-family: "Times New Roman";
+  top: 10vh;
+}
+
+#secondpagephoto{
+  height: 54vh;
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  width: 44vh;
+  font-family: "Times New Roman";
+  top: 10vh;
+}
+
+#thirdpagephoto{
+  height: 54vh;
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  width: 44vh;
+  font-family: "Times New Roman";
+  top: 10vh;
+}
+
+#secondpageheader{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  margin-left: 30%;
+  top: 1vh;
+  width: 50vh;
+  font-family: 'Inter';
+}
+
+#thirdpageheader{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  margin-left: 30%;
+  top: 1vh;
+  width: 50vh;
+  font-family: 'Inter';
+}
+
+#firstpagenews{
+  color: rgb(0, 0, 0);
+  position: relative;
+  text-align: justify;
+  font-size: 29px;
+  width: 80vh;
+  top: -43vh;
+  margin-left: 35%;
+  height: 52vh;
+}
+
+.geridondur{
+  position: absolute;
+  display: none;
+  font-size: 30px;
+  bottom: 0px;
+  right: 1vh;
+  color: red;
+}
+
+.geridondur:hover{
+  color: rgba(255, 0, 0, 0.575);
+}
+
+.firstpagedetail {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 90%;
+  margin-right: 50%;
+  font-size: 23px;
+  color: #78f160;
+}
+
+.firstpagedetail:hover{
+  color: #78f1609c;
+}
+
+.secondpagedetail {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 90%;
+  margin-right: 50%;
+  font-size: 23px;
+  color: #78f160;
+}
+
+.secondpagedetail:hover{
+  color: #78f1609c;
+}
+
+.thirdpagedetail {
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 90%;
+  margin-right: 50%;
+  font-size: 23px;
+  color: #78f160;
+}
+
+.thirdpagedetail:hover{
+  color: #78f1609c;
+}
+
+#secondpagenews{
+  color: rgb(0, 0, 0);
+  position: relative;
+  text-align: justify;
+  font-size: 29px;
+  width: 80vh;
+  top: -43vh;
+  margin-left: 35%;
+  height: 52vh;
+}
+
+#thirdpagenews{
+  color: rgb(0, 0, 0);
+  position: relative;
+  text-align: justify;
+  font-size: 29px;
+  width: 80vh;
+  top: -43vh;
+  margin-left: 35%;
+  height: 52vh;
+}
+
+.editfp {
+  position: absolute;
+  top: 1.5vh;
+  margin-left: 75%;
+  margin-right: 30%;
+  color: rgb(0, 255, 128);
+  font-size: 40px;
+}
+
+.editfp:hover{
+  color: rgba(0, 255, 128, 0.356);
+}
+
+.editsp {
+  position: absolute;
+  top: 1.5vh;
+  margin-left: 75%;
+  margin-right: 30%;
+  color: rgb(0, 255, 128);
+  font-size: 40px;
+}
+
+.editsp:hover{
+  color: rgba(0, 255, 128, 0.356);
+}
+
+.edittp {
+  position: absolute;
+  top: 1.5vh;
+  margin-left: 75%;
+  margin-right: 30%;
+  color: rgb(0, 255, 128);
+  font-size: 40px;
+}
+
+.edittp:hover{
+  color: rgba(0, 255, 128, 0.356);
+}
+
+textarea {
+  resize: none;
+}
+
+.notify {
+  position: absolute;;
+  background: #333;
+  color: white;
+  padding: 0.625rem 0.95rem;
+  border-radius: 2px;
+  margin: 0.4375rem;
+  z-index: 105;
+  border:2px solid gray;
+}

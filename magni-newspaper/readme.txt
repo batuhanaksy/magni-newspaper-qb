@@ -1,0 +1,2 @@
+-- add your items file
+['newspaper'] 			 		 = {['name'] = 'newspaper', 					['label'] = 'News Paper', 				['weight'] = 0, 		['type'] = 'item', 		['image'] = 'newspaper.png', 			['unique'] = true, 	    ['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'News Paper'},

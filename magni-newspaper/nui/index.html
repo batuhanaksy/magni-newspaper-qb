@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="./script.js" type="text/javascript"></script>
+		<script src="https://kit.fontawesome.com/7df8750e48.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./style.css" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+		<title>Magni Newspaper</title>
+	</head>
+	<body>
+		<div class="container disableSelection">
+			<p class="geridondur"><i class="fas fa-arrow-left"></i></p>
+            <p id="newstitle">LOS SANTOS NEWS</p><hr id="hr1">
+			<p id="time">30/05/2022</p>
+			<hr id="hr2">
+			
+            <div class="firstpage">
+				<!-- <p class = "firstpagedetail"><i class="fas fa-arrow-right"></i></p> -->
+
+                <p id="fpheader">First Page Header</p>
+				<p id="fpnews">First Page News</p>
+				<div class="image">
+					<img id ="img1" src="" alt="" name="img1">
+				</div>
+				<p style="margin-top: 1vh; font-weight: 800; font-family: 'Times New Roman', Times, serif;">1</p>
+				<p id="next1"><i class="fas fa-arrow-right"></i></p>
+            </div>       
+
+			<div class="secondpage" style="display: none;">
+				<!-- <p class = "secondpagedetail"><i class="fas fa-arrow-right"></i></p> -->
+				<p id="spheader">Second Page Header</p>
+				<p id="spnews">Second Page News</p>
+				<div class="image2">
+					<img id ="img2" src="" alt="" name="img2">
+				</div>
+				<p style="margin-top: 1vh; font-weight: 800; font-family: 'Times New Roman', Times, serif;">2</p>
+				<p id="next2"><i class="fas fa-arrow-right"></i></p>
+				<p id="back2"><i class="fas fa-arrow-left"></i></p>
+			</div>   
+
+			<div class="thirdpage" style="display: none;">
+				<!-- <p class = "thirdpagedetail"><i class="fas fa-arrow-right"></i></p> -->
+				<p id="tpheader">Third Page Header</p>
+				<p id="tpnews">Third Page News</p>
+				<div class="image3">
+					<img id ="img3" src="" alt="" name="img3">
+				</div>
+				<p style="margin-top: 1vh; font-weight: 800; font-family: 'Times New Roman', Times, serif;">3</p>
+				<p id="back3"><i class="fas fa-arrow-left"></i></p>
+			</div>
+
+		</div>
+		<div class="edit">
+			<p id="newstitle">LOS SANTOS NEWS</p><hr id="hr1">
+			<p id="time">TIME</p>
+			<hr id="hr2">
+			
+			<div style="display:none" class="notify">TEST Notify!</div>
+            <div class="firstpage">			
+
+				<p class="editfp"><i class="fa-solid fa-square-check"></i></p>
+				<input type="text" id="firstpageheader" name="firstpageheader" placeholder="HEADER 1" maxlength="14">
+				<input type="text" id="firstpagephoto" name="firstpagephoto" placeholder="PHOTO URL 1">
+				<textarea name="firstpagenews" id="firstpagenews" maxlength="420" placeholder="NEWS 1"></textarea>
+				<p id="next1edit"><i class="fas fa-arrow-right"></i></p>
+            </div>    
+
+			<div class="secondpage" style="display: none;">
+				<p class="editsp"><i class="fa-solid fa-square-check"></i></p>
+				<input type="text" id="secondpageheader" name="secondpageheader"placeholder="HEADER 2" maxlength="14">
+				<input type="text" id="secondpagephoto" name="secondpagephoto" placeholder="PHOTO URL 2 ">
+				<textarea name="secondpagenews" id="secondpagenews" maxlength="420" placeholder="NEWS 2"></textarea>
+				<p id="next2edit"><i class="fas fa-arrow-right"></i></p>
+				<p id="back1back"><i class="fas fa-arrow-left"></i></p>
+			</div>   
+			<div class="thirdpage" style="display: none;">
+				<p class="editsp"><i class="fa-solid fa-square-check"></i></p>
+				<input type="text" id="thirdpageheader" name="thirdpageheader" placeholder="HEADER 3" maxlength="14">
+				<input type="text" id="thirdpagephoto" name="thirdpagephoto" placeholder="PHOTO URL 3">
+				<textarea name="thirdpagenews" id="thirdpagenews" maxlength="420" placeholder="NEWS 3"></textarea>
+				<p id="back2edit"><i class="fas fa-arrow-left"></i></p>
+			
+			</div>
+		</div>
+	</body>
+</html>
